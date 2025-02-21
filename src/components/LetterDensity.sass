@@ -1,0 +1,65 @@
+@import "../styles/_typography.sass"
+@import "../styles/_variables.sass"
+
+.letter-density
+  padding: 1rem
+  border-radius: 8px
+  width: 100%
+  color: $neutral200
+
+  h2
+    margin-bottom: 10px
+    @include text-preset-2
+
+  .bar-container
+    display: flex
+    flex-direction: column
+    gap: 8px
+    @include text-preset-4
+
+  .bar
+    display: flex
+    align-items: center
+    position: relative
+    height: 20px
+    border-radius: 10px
+    overflow: hidden
+    padding: 4px
+
+    .label
+      font-weight: bold
+      width: 20px
+      color: white
+    
+    .measure
+        background-color: $neutral800
+        width: 90%
+        height: 20px
+        margin-right: 1rem
+        border-radius: 10px
+
+        .fill
+            height: 100%
+            background: #e77aff
+            border-radius: 10px
+            transition: width 0.5s ease-in-out
+
+        .value
+            margin-left: auto
+            font-size: 0.8rem
+            color: white
+            padding-left: 8px
+
+  .show-button
+    background: none
+    border: none
+    color: white
+    font-size: 0.9rem
+    cursor: pointer
+    margin-top: 10px
+
+    &:hover
+      text-decoration: underline
+
+
+
